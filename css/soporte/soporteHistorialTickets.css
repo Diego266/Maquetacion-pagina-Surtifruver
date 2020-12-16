@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px ;
+    font-family: 'Roboto', sans-serif;
+}
+/*sin bordes en blancos*/
+.sinpadding{
+    padding: 0px;
+    margin: 0px;
+}
+/*Cuerpo*/
+body{
+    width: 100%;
+    height: 680px;
+    padding: 0px;
+}
+
+
+/*Apartados menu*/
+
+.menu{
+    background: #151B26;
+    height: 730px;
+}
+
+.contendio{
+    background: #eb5656;
+    height: 730px;
+}
+
+/*Icono TECNICO*/
+
+.iconAdmin{
+    color: white;
+    font-size: 50px;
+    margin-left: 35px;
+    margin-top: 17px;
+}
+/*Titulo admin*/
+
+h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*Linea, titulo y icono TECNICO*/
+hr {
+    height: 5px;
+    width: 98%;
+    background-color: black;
+    background-color: white;
+    align-content: center;
+}
+
+/*Menu de opciones bajarlo de posicion*/
+.bajarMenu{
+    margin-top: 40px;
+}
+/*Espacio entre las opciones de tickets*/
+.espacio{
+    margin-top: 20px;
+}
+.home{
+    font-size: 35px;
+    color:  white;
+}
+
+/*USUARIOS Y TICKETS*/
+
+.dropdown-container span{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color:white;
+}
+.dropdown-container:hover span{
+    color: #eb5656;
+}
+.dropdown-container{
+     position: relative;
+}
+.dropdown-container ul{
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    margin-left: 20px;
+    color: white;
+}
+.dropdown-container:hover ul{
+    max-height: 70px;
+}
+.dropdown-container ul li a{
+    color: white;
+    font-size: 19px;
+}
+/*iconos de opciones*/
+.styleIcon{
+    font-size: 50px;
+    color: white;
+}
+
+/*Boton*/
+.styleButton{
+    margin-top: 400px;
+
+}
+
+
+/***************************Contenido*************************************/
+
+.graficos{
+    margin-top: 10px;
+    width: 100%;
+    height: 97%;
+    background: #fdeeee;
+}
+
+h2{
+    margin:30px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+}
+
+/*IMG*/
+
+img{
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 200px;
+    height: 80px;
+    float: right;
+}
+
+/*H3*/
+h3{
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+/*CONTENEDOR PARA LA TABLA*/
+.tabla{
+    width: 98%;
+    height: 580px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(1, 2, 3, 0.2);
+}
+/*--------------------FILTRO PARA USUARIOS-------------------*/
+
+.paddinfiltro{
+    padding: 0px;
+    margin: 0px;
+}
+input{
+    color: rgb(16, 57, 16);
+}
+
+/* label color */
+ .input-field label {
+    color: forestgreen;
+ }
+/*boton*/
+.btnBuscar{
+margin-top: 25px;
+}
+
+/*-----------------TABLE------------------------*/
+.correrTabla{
+    padding-left: 50px;
+    padding-right: 50px;
+}

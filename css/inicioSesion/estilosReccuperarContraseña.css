@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    width: 100%;
+    height: 680px;
+    background-image:url(../../img/background\ surtifruver-2.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*Contenedor de  inicio de sesion*/
+.contenedor1{
+    border: 2PX solid rgb(126, 0, 0) ;
+    background:#D9183B;
+    width: 40%;
+    height: 350px;
+    float: none;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(1, 2, 3, 0.2);
+    margin-top: 170px;
+    }
+/*titulo*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin: center auto;
+    text-align: center;
+    color: white;
+}
+
+/*Parrafo*/
+p{
+    margin-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/*boton atras*/
+
+.estiloboton{
+    margin-top: 50px;
+    margin-left: 20px;
+}

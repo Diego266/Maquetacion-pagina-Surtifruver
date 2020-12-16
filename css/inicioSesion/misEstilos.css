@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+ /*QUITAR ESPACIOS VACIOS*/
+ .sinpaddin{
+    padding: 0 !important;
+    margin:  0px !important;
+}
+body{
+    width: 100%;
+    height: 680px;
+    background-image:url(../../img/background\ surtifruver-2.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*Contenedor de  inicio de sesion*/
+.contenedor1{
+    border: 2PX solid rgb(126, 0, 0) ;
+    background:#D9183B;
+    width: 40%;
+    height: 480px;
+    float: none;
+    margin: 50px auto;
+    margin-top: 90px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(1, 2, 3, 0.2);
+    }
+/*formulario*/
+form{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+/*titulo*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin: center auto;
+    text-align: center;
+    color: white;
+}
+
+/*ESTILOS  INPUT Y LABELS*/
+input{
+    color: white;
+}
+
+/* label color */
+ .input-field label {
+    color: white;
+ }
+
+/*Estilos enlace*/
+
+.stileLink{
+    text-decoration: underline;
+    color: white;
+}
+
+/*boton*/
+.stileBotton{
+    margin-right: 100px;
+}

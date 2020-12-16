@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- ICONOS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MIS ESTILOS -->
+    <link rel="stylesheet" href="../../../css/administrador/infoTickets.css">
+</head>
+
+<body>
+    <!-- ICONO- TITULO Y LINEA ADMINISTRADOR -->
+    <div class="row">
+        <div class="col s3 menu">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row sinpadding">
+                        <div class="col s3">
+                            <i class="material-icons iconAdmin">account_circle</i>
+                        </div>
+                        <div class="col s7">
+                            <h1>ADMINISTRADOR</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!-- MENU DE SELECCION -->
+                    <div class="row">
+                        <div class="col bajarMenu s10 offset-s1">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">home</i>
+                                </div>
+                                <div class="col s9">
+                                    <a href="" class="home">Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">group</i>
+                                </div>
+                                <div class="col s9">
+                                    <div class="dropdown-container">
+                                        <span>Usuarios</span>
+                                        <ul>
+                                            <li>
+                                                <a href=""> Crear usuario</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> Ver usuarios</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1 espacio">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">turned_in</i>
+                                </div>
+                                <div class="col s9">
+                                    <div class="dropdown-container">
+                                        <span>Tickets</span>
+                                        <ul>
+                                            <li>
+                                                <a href=""> Activos y pendientes</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> Historial</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s9 offset-s3">
+                            <a class="waves-effect waves-light btn red darken-4 styleButton" href="../index.html"><i
+                                    class="material-icons left ">power_settings_new</i>Cerrar sesion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR TABLA-->
+        <div class="col s9 contendio">
+            <div class="graficos">
+                <div class="row sinpadding">
+                    <div class="col s6">
+                        <h2>Tickets</h2>
+
+                    </div>
+                    <div class="col s4 offset-s2">
+                        <img src="../../../img/cropped-cropped-logo-compelto-con-R-1-01.png" alt="">
+                    </div>
+                </div>
+                <div class="tabla">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="col s10">
+                                    <div class="info">
+                                        <h3>Mantenimiento nevera</h3>
+                                        <h4>Fabian Lozano</h4>
+                                        <h4>Fecha de creacion: 20-10-2020</h4>
+                                        <h4>Carrera 7</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                            aute
+                                            irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                            deserunt
+                                            mollit anim id est laborum."</p>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <div class="switch" style="padding: 40px;">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s2">
+                                    <button class="btn waves-effect waves-light cyan darken-4 btnAtras" type="submit"
+                                        name="action">Atras
+                                        <i class="material-icons left">arrow_back</i>
+                                    </button>
+                                </div>
+                                <div class="col s1 offset-s8">
+                                    <button class="btn  green darken-1  modal-trigger" data-target="modal1"
+                                        type="submit" name="action">Aceptar
+                                    </button>
+                                </div>
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Editar usuario</h4>
+                                        <p>¿Desea editar el usuario?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect red darken-4 btn">Cancelar</a>
+                                        <a href="#!" class="modal-close waves-effect green lighten-1 btn">Aceptar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../../../js/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../../js/scripts.js "></script>
+
+</html>

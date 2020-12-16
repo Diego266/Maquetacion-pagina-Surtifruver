@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- ICONOS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MIS ESTILOS -->
+    <link rel="stylesheet" href="../../css/gerente/usuarioInfoTicketsEditar.css">
+</head>
+
+<body>
+    <!-- ICONO- TITULO Y LINEA USUARIO -->
+    <div class="row">
+        <div class="col s3 menu">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row sinpadding">
+                        <div class="col s3">
+                            <i class="material-icons iconAdmin">account_circle</i>
+                        </div>
+                        <div class="col s7">
+                            <h1>USUARIO</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!-- MENU DE SELECCION -->
+                    <div class="row">
+                        <div class="col s10 offset-s1 espacio">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">turned_in</i>
+                                </div>
+                                <div class="col s9">
+                                    <div class="dropdown-container">
+                                        <span>Tickets</span>
+                                        <ul>
+                                            <li>
+                                                <a href="crearTicket.html"> Crear ticket</a>
+                                            </li>
+                                            <li>
+                                                <a href="crearTicket.html"> Crear ticket</a>
+                                            </li>
+                                            <li>
+                                                <a href="usuarioTickets.html"> Activos y pendientes</a>
+                                            </li>
+                                            <li>
+                                                <a href="usuarioHistorialTickets.html"> Historial</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s9 offset-s3">
+                            <a class="waves-effect waves-light btn red darken-4 styleButton"
+                                href="../inicioSesison/login.html"><i
+                                    class="material-icons left ">power_settings_new</i>Cerrar sesion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR TABLA-->
+        <div class="col s9 contendio">
+            <div class="graficos">
+                <div class="row sinpadding">
+                    <div class="col s6">
+                        <h2>Tickets</h2>
+
+                    </div>
+                    <div class="col s4 offset-s2">
+                        <img src="../../img/cropped-cropped-logo-compelto-con-R-1-01.png" alt="">
+                    </div>
+                </div>
+                <div class="tabla">
+                    <h3>Editar ticket</h3>
+                    <div class="row">
+                        <div class="col s12">
+                            <form>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Mantenimiento nevera" id="first_name" type="text"
+                                            class="validate">
+                                        <label for="first_name">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Carrera 7" id="first_name" type="text" class="validate">
+                                        <label for="first_name">C.O</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input
+                                            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe voluptatem molestiae delectus non, voluptates quis temporibus sed nobis, possimus, aut vel inventore dolore labore suscipit. Perferendis provident quos nesciunt?"
+                                            id="first_name" type="text" class="validate">
+                                        <label for="first_name">Descripcion</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col s2">
+                                    <a class="btn waves-effect waves-light cyan darken-4 btnAtras" type="submit"
+                                        name="action" href="usuarioInfoTickets.html">Atras
+                                        <i class="material-icons left">arrow_back</i>
+                                    </a>
+                                </div>
+                                <div class="col s1 offset-s8">
+                                    <button class="btn  green darken-1  modal-trigger" data-target="modal1"
+                                        type="submit" name="action">Editar
+                                    </button>
+                                </div>
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Editar usuario</h4>
+                                        <p>¿Desea editar su ticket?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect red darken-4 btn">Cancelar</a>
+                                        <a href="#!" class="modal-close waves-effect green lighten-1 btn">Aceptar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+<script src="../../js/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../js/scripts.js "></script>
+
+</html>

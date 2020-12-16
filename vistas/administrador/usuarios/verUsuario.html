@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- ICONOS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MIS ESTILOS -->
+    <link rel="stylesheet" href="../../../css/administrador/verUsuarioAdmon.css">
+</head>
+
+<body>
+    <!-- ICONO- TITULO Y LINEA ADMINISTRADOR -->
+    <div class="row">
+        <div class="col s3 menu">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row sinpadding">
+                        <div class="col s3">
+                            <i class="material-icons iconAdmin">account_circle</i>
+                        </div>
+                        <div class="col s7">
+                            <h1>ADMINISTRADOR</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!-- MENU DE SELECCION -->
+                    <div class="row">
+                        <div class="col bajarMenu s10 offset-s1">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">home</i>
+                                </div>
+                                <div class="col s9">
+                                    <a href="" class="home">Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">group</i>
+                                </div>
+                                <div class="col s9">
+                                    <div class="dropdown-container">
+                                        <span>Usuarios</span>
+                                        <ul>
+                                            <li>
+                                                <a href="crearUsuario.html"> Crear usuario</a>
+                                            </li>
+                                            <li>
+                                                <a href="verUsuario.html"> Ver usuarios</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1 espacio">
+                            <div class="row">
+                                <div class="col s3">
+                                    <i class="material-icons styleIcon">turned_in</i>
+                                </div>
+                                <div class="col s9">
+                                    <div class="dropdown-container">
+                                        <span>Tickets</span>
+                                        <ul>
+                                            <li>
+                                                <a href="../tickets/tickets.html"> Activos y pendientes</a>
+                                            </li>
+                                            <li>
+                                                <a href="../tickets/historialTickets.html"> Historial</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s9 offset-s3">
+                            <a class="waves-effect waves-light btn red darken-4 styleButton" href="../../inicioSesison/login.html"><i
+                                    class="material-icons left ">power_settings_new</i>Cerrar sesion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR TABLA-->
+        <div class="col s9 contendio">
+            <div class="graficos">
+                <div class="row sinpadding">
+                    <div class="col s6">
+                        <h2>Usuarios</h2>
+
+                    </div>
+                    <div class="col s4 offset-s2">
+                        <img src="../../../img/cropped-cropped-logo-compelto-con-R-1-01.png" alt="">
+                    </div>
+                </div>
+                <div class="tabla">
+                    <div class="row sinpadding">
+                        <div class="col s12">
+                            <h3>DATOS</h3>
+                            <!-- FILTRO -->
+                            <div class="row paddinfiltro">
+                                <!-- ID_Usuario -->
+                                <div class="col s2 offset-s1">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" id="autocomplete-input" class="autocomplete">
+                                            <label for="autocomplete-input">Id usuario</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--CEDULA-->
+                                <div class="col s2">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" id="autocomplete-input" class="autocomplete">
+                                            <label for="autocomplete-input">CEDULA</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CARGO -->
+                                <div class="col s2">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" id="autocomplete-input" class="autocomplete">
+                                            <label for="autocomplete-input">CARGO</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- NOMBRE -->
+                                <div class="col s3">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" id="autocomplete-input" class="autocomplete">
+                                            <label for="autocomplete-input">NOMBRE</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s1">
+                                    <a class="waves-effect waves-light btn btnBuscar"><i
+                                            class="material-icons center">search</i></a>
+                                </div>
+                            </div>
+                            <!-- TABLA DE USUARIOS -->
+                            <div class="row correrTabla">
+                                <div class="col s12">
+                                    <table class="striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ID_Usuario</th>
+                                                <th>Cedula</th>
+                                                <th>Cargo</th>
+                                                <th>Nombre</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>123456789</td>
+                                                <td>Administrador</td>
+                                                <td>Juan Mendoza</td>
+                                                <td>
+                                                    <a class="btn tooltipped yellow" data-position="bottom"
+                                                        data-tooltip="Ver datos" href="datosUsuario.html"><i
+                                                            class="material-icons center">person</i></a>
+                                                    <a class="btn tooltipped red modal-trigger" href="#modal1"
+                                                        data-position="bottom" data-tooltip="Eliminar datos"><i
+                                                            class="material-icons center">delete</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>987654321</td>
+                                                <td>Tecnico</td>
+                                                <td>Amanda Martinez</td>
+                                                <td>
+                                                    <a class="btn tooltipped yellow" data-position="bottom"
+                                                        data-tooltip="Ver datos"><i
+                                                            class="material-icons center">edit</i></a>
+                                                    <a class="btn tooltipped red" data-position="bottom"
+                                                        data-tooltip="Eliminar datos"><i
+                                                            class="material-icons center">delete</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>687954125</td>
+                                                <td>Gerente</td>
+                                                <td>Luz Castillo</td>
+                                                <td>
+                                                    <a class="btn tooltipped yellow" data-position="bottom"
+                                                        data-tooltip="Ver datos"><i
+                                                            class="material-icons center">edit</i></a>
+                                                    <a class="btn tooltipped red" data-position="bottom"
+                                                        data-tooltip="Eliminar datos"><i
+                                                            class="material-icons center">delete</i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- ALERTA -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Eliminar usuario</h4>
+                                            <p>¿Desea eliminar el usuario?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-close waves-effect red darken-4 btn">Cancelar</a>
+                                            <a href="#!"
+                                                class="modal-close waves-effect green lighten-1 btn">Aceptar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../../../js/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../../../js/scripts.js "></script>
+
+</html>

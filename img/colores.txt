@@ -1,0 +1,9 @@
+COLORES DASHBOAR ADMINISTRADOR:
+Negro azulado: #151B26
+Verde pastel: #A6D982
+Tarjeta verde pastel claro: #F0FCE8
+
+COLORES SOPORTE:
+Negro azulado: #151B26
+Rojo pastel: #F8BDBD
+Tarjeta rojo pastel claro: #FDEEEE
